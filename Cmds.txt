@@ -1,0 +1,55 @@
+Power On/Off:
+
+Protocol=NEC Address=0x4781 Command=0x81 Raw-Data=0x7E814781 32 bits LSB first
+Send with: IrSender.sendNEC(0x4781, 0x81, <numberOfRepeats>);
+
+
+
+
+clean century (increase fan speed):
+
+Protocol=NEC Address=0x4781 Command=0xAA Raw-Data=0x55AA4781 32 bits LSB first
+Send with: IrSender.sendNEC(0x4781, 0xAA, <numberOfRepeats>);
+
+clean century (decrease fan speed):
+
+Protocol=NEC Address=0x4781 Command=0xAB Raw-Data=0x54AB4781 32 bits LSB first
+Send with: IrSender.sendNEC(0x4781, 0xAB, <numberOfRepeats>);
+
+
+
+Driving mode:
+
+Protocol=NEC Address=0x4781 Command=0x9B Raw-Data=0x649B4781 32 bits LSB first
+Send with: IrSender.sendNEC(0x4781, 0x9B, <numberOfRepeats>);
+
+
+Clean indicator light:
+
+Protocol=NEC Address=0x4781 Command=0x97 Raw-Data=0x68974781 32 bits LSB first
+Send with: IrSender.sendNEC(0x4781, 0x97, <numberOfRepeats>);
+
+
+Booster control:
+
+Protocol=NEC Address=0x4781 Command=0x96 Raw-Data=0x69964781 32 bits LSB first
+Send with: IrSender.sendNEC(0x4781, 0x96, <numberOfRepeats>);
+
+
+Booster fan rotation:
+
+Protocol=NEC Address=0x4781 Command=0x95 Raw-Data=0x6A954781 32 bits LSB first
+Send with: IrSender.sendNEC(0x4781, 0x95, <numberOfRepeats>);
+
+
+
+sleep schedule:
+
+Protocol=NEC Address=0x4781 Command=0x94 Raw-Data=0x6B944781 32 bits LSB first
+Send with: IrSender.sendNEC(0x4781, 0x94, <numberOfRepeats>);
+
+
+Silent :
+
+Protocol=NEC Address=0x4781 Command=0xB6 Raw-Data=0x49B64781 32 bits LSB first
+Send with: IrSender.sendNEC(0x4781, 0xB6, <numberOfRepeats>);
